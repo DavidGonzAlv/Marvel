@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <style name="MyTheme" parent="MyTheme.Base">
+
+  </style>
+
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#FF2C3643</item>
+    <item name="colorPrimaryDark">#0F1D2E</item>
+    <item name="colorAccent">#FF2C3643</item>
+    <item name="colorControlHighlight">#FF5E6875</item>
+    <item name="colorButtonNormal">#b3b2b2</item>
+  </style>
+  
+  <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/marvel</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+</resources>
