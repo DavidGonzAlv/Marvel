@@ -4,5 +4,5 @@
   <string name="ApplicationName">Marvel.Android</string>
   <string name ="Usuario">Usuario</string>
   <string name ="Contraseña">Contraseña</string>
-  <string name ="Login">Login</string>
+  <string name ="GetComics">GetComics</string>
 </resources>

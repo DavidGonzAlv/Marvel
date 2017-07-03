@@ -9,13 +9,20 @@
     <Import_RootNamespace>Marvel.Core</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseMarvelModel\MarvelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Data\MarvelData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PersonajesModel\Personaje.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mvvm\PropertyChangedBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mvvm\ServiceContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\BaseService\BaseService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\BaseService\IBaseService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\MarvelService\IMarvelService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\MarvelService\MarvelService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Cadenas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Metodos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ObservableRangeCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Login\LoginViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Main\MainViewModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -8,6 +9,7 @@ using Android.Views;
 using Android.Widget;
 using Marvel.Android.Activities.Base;
 using Marvel.Core.ViewModels.Login;
+using System.Collections.Generic;
 
 namespace Marvel.Android.Activities
 {
@@ -26,9 +28,9 @@ namespace Marvel.Android.Activities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Login);
 
-            #region Boton de Login
+            #region Boton de GetComics
 
-            LoginBtn = FindViewById<Button>(Resource.Id.btnLogin);
+            LoginBtn = FindViewById<Button>(Resource.Id.btnGetComics);
             LoginBtn.Click += Login;
 
             #endregion
@@ -40,7 +42,7 @@ namespace Marvel.Android.Activities
 
         #region Metodos 
 
-        private void Login(object sender, EventArgs eventArgs)
+        private  void Login(object sender, EventArgs eventArgs)
         {
             StartActivity(typeof(MainActivity));
         }

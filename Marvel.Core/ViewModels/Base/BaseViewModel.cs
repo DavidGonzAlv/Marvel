@@ -4,11 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Marvel.Core.Service.BaseService;
+using Marvel.Core.Service.MarvelService;
 
 namespace Marvel.Core.ViewModels.Base
 {
     public class BaseViewModel : PropertyChangedBase
     {
+        protected IMarvelService MarvelService { get; private set; }
+
         public event EventHandler IsBusyChanged;
         public event EventHandler IsLogOutChanged;
 
@@ -50,6 +54,7 @@ namespace Marvel.Core.ViewModels.Base
         public BaseViewModel()
         {
             Validate();
+            MarvelService = ServiceContainer.Resolve<IMarvelService>();
         }
 
         public bool IsValid => _errors.Count == 0;
